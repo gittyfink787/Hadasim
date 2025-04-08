@@ -1,0 +1,2411 @@
+
+CREATE TABLE Person (
+    person_id INT CHECK (person_id BETWEEN 1 AND 9999) PRIMARY KEY,
+    personal_name VARCHAR(50) NOT NULL,
+    family_name VARCHAR(50) NOT NULL,
+    gender VARCHAR(10) CHECK (Gender IN ('Male', 'Female')) NOT NULL,
+    father_id INT CHECK (father_id BETWEEN 1 AND 9999),
+    mother_id INT CHECK (mother_id BETWEEN 1 AND 9999),
+    spouse_id INT CHECK (spouse_id BETWEEN 1 AND 9999)  
+	
+);
+INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (1,'Michael','Collins','Male',
+            NULL ,
+            NULL,
+            2);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (2,'Zippora','Anderson','Female',
+            NULL ,
+            NULL,
+            1);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (3,'Nadav','Miller','Male',
+            NULL ,
+            NULL,
+            8);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (4,'Yonatan','Ramirez','Male',
+            NULL ,
+            NULL,
+            9);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (5,'Michael','Garcia','Male',
+            NULL ,
+            NULL,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (6,'Asher','Green','Male',
+            NULL ,
+            NULL,
+            15);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (7,'Shlomo','Gonzalez','Male',
+            NULL ,
+            NULL,
+            16);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (8,'Malkah','Lewis','Female',
+            NULL ,
+            NULL,
+            3);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (9,'Sarah','Edwards','Female',
+            3 ,
+            8,
+            4);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (10,'Yaakov','Ramirez','Male',
+            4 ,
+            9,
+            17);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (11,'Hadas','Martinez','Female',
+            4 ,
+            9,
+            5);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (12,'Noam','Perez','Male',
+            4 ,
+            9,
+            18);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (13,'Eli','Harris','Male',
+            4 ,
+            9,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (14,'Elijah','Thompson','Male',
+            4 ,
+            9,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (15,'Leah','Parker','Female',
+            4 ,
+            9,
+            6);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (16,'Gila','Davis','Female',
+            4 ,
+            9,
+            7);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (17,'Esther','Nelson','Female',
+            7 ,
+            16,
+            10);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (18,'Ayelet','Mitchell','Female',
+            7 ,
+            16,
+            12);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (19,'Nava','Gonzalez','Female',
+            7 ,
+            16,
+            13);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (20,'Joshua','Phillips','Male',
+            7 ,
+            16,
+            24);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (21,'Yitzhak','Jackson','Male',
+            7 ,
+            16,
+            25);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (22,'Asher','Miller','Male',
+            7 ,
+            16,
+            26);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (23,'Hadas','Young','Female',
+            7 ,
+            16,
+            14);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (24,'Naomi','White','Female',
+            7 ,
+            16,
+            20);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (25,'Yocheved','Phillips','Female',
+            7 ,
+            16,
+            21);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (26,'Yaara','Evans','Female',
+            21 ,
+            25,
+            22);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (27,'Lior','Roberts','Male',
+            21 ,
+            25,
+            30);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (28,'Baruch','Parker','Male',
+            21 ,
+            25,
+            33);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (29,'Moses','Young','Male',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (30,'Hadas','Roberts','Female',
+            21 ,
+            25,
+            27);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (31,'Shimon','Lee','Male',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (32,'Asher','Williams','Male',
+            21 ,
+            25,
+            37);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (33,'Tehila','Moore','Female',
+            21 ,
+            25,
+            28);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (34,'Levi','Hall','Male',
+            21 ,
+            25,
+            39);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (35,'Yocheved','Carter','Female',
+            21 ,
+            25,
+            29);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (36,'Tehila','Carter','Female',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (37,'Deborah','Taylor','Female',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (38,'Reuben','Collins','Male',
+            21 ,
+            25,
+            40);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (39,'Ariel','Rivera','Female',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (40,'Tali','Sanchez','Female',
+            21 ,
+            25,
+            38);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (41,'Malkah','Rodriguez','Female',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (42,'Esther','Edwards','Female',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (43,'Samuel','Martinez','Male',
+            21 ,
+            25,
+            41);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (44,'Shimon','Ramirez','Male',
+            21 ,
+            25,
+            42);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (45,'Nathan','Harris','Male',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (46,'Yona','Taylor','Female',
+            21 ,
+            25,
+            45);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (47,'Shimon','Parker','Male',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (48,'Shimon','Adams','Male',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (49,'Chagit','Carter','Female',
+            21 ,
+            25,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (50,'Ruth','Jackson','Female',
+            47 ,
+            49,
+            48);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (51,'Naomi','Young','Female',
+            47 ,
+            49,
+            52);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (52,'Matan','Parker','Male',
+            47 ,
+            49,
+            51);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (53,'Ahuva','Edwards','Female',
+            47 ,
+            49,
+            54);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (54,'Jonah','Miller','Male',
+            47 ,
+            49,
+            53);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (55,'Ayelet','Green','Female',
+            47 ,
+            49,
+            56);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (56,'Benjamin','White','Male',
+            47 ,
+            49,
+            55);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (57,'Baruch','Stewart','Male',
+            47 ,
+            49,
+            59);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (58,'Lior','Lee','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (59,'Rebecca','Davis','Female',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (60,'Tova','Thomas','Female',
+            47 ,
+            49,
+            58);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (61,'Reuben','Hall','Male',
+            47 ,
+            49,
+            63);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (62,'Eli','Parker','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (63,'Miriam','Edwards','Female',
+            47 ,
+            49,
+            61);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (64,'Daniel','Phillips','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (65,'Hila','Hernandez','Female',
+            47 ,
+            49,
+            62);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (66,'Yona','Campbell','Female',
+            47 ,
+            49,
+            64);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (67,'Yocheved','Adams','Female',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (68,'Reuven','Martin','Male',
+            47 ,
+            49,
+            67);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (69,'Shoshana','Carter','Female',
+            47 ,
+            49,
+            72);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (70,'Michal','Baker','Female',
+            47 ,
+            49,
+            73);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (71,'Ruth','Thomas','Female',
+            47 ,
+            49,
+            74);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (72,'Isaac','Perez','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (73,'Yonatan','Nelson','Male',
+            47 ,
+            49,
+            70);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (74,'Yonatan','Anderson','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (75,'Isaac','Torres','Male',
+            47 ,
+            49,
+            79);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (76,'Asher','Jones','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (77,'Ezekiel','Jones','Male',
+            47 ,
+            49,
+            82);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (78,'Simeon','Phillips','Male',
+            47 ,
+            49,
+            84);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (79,'Yocheved','Adams','Female',
+            47 ,
+            49,
+            75);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (80,'Matan','Hall','Male',
+            47 ,
+            49,
+            85);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (81,'Zippora','King','Female',
+            47 ,
+            49,
+            76);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (82,'Dina','Miller','Female',
+            47 ,
+            49,
+            77);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (83,'Tuvia','Ramirez','Male',
+            47 ,
+            49,
+            87);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (84,'Rivka','Clark','Female',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (85,'Dvorah','Brown','Female',
+            47 ,
+            49,
+            80);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (86,'Aaron','Sanchez','Male',
+            47 ,
+            49,
+            89);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (87,'Hannah','Thomas','Female',
+            47 ,
+            49,
+            83);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (88,'Ezra','Adams','Male',
+            47 ,
+            49,
+            95);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (89,'Tamar','Ramirez','Female',
+            47 ,
+            49,
+            86);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (90,'Simeon','Young','Male',
+            47 ,
+            49,
+            96);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (91,'Isaac','Lewis','Male',
+            47 ,
+            49,
+            97);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (92,'Aaron','Carter','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (93,'Eli','Edwards','Male',
+            47 ,
+            49,
+            99);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (94,'Moses','Clark','Male',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (95,'Shira','Wilson','Female',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (96,'Rachel','Hernandez','Female',
+            47 ,
+            49,
+            90);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (97,'Sarah','Harris','Female',
+            47 ,
+            49,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (98,'Liat','Young','Female',
+            91 ,
+            97,
+            92);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (99,'Rivka','Turner','Female',
+            92 ,
+            98,
+            93);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (100,'Deborah','Gonzalez','Female',
+            91 ,
+            97,
+            94);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (101,'Yocheved','Brown','Female',
+            92 ,
+            98,
+            102);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (102,'Nadav','Lee','Male',
+            91 ,
+            97,
+            101);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (103,'Aaron','Rivera','Male',
+            91 ,
+            97,
+            104);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (104,'Ahuva','Baker','Female',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (105,'Aaron','Green','Male',
+            92 ,
+            98,
+            108);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (106,'Jacob','Jones','Male',
+            91 ,
+            97,
+            111);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (107,'Shimon','Thomas','Male',
+            92 ,
+            98,
+            112);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (108,'Ruth','Hall','Female',
+            91 ,
+            97,
+            105);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (109,'Yonatan','Campbell','Male',
+            92 ,
+            98,
+            113);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (110,'Oren','Garcia','Male',
+            92 ,
+            98,
+            114);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (111,'Shoshana','Rivera','Female',
+            91 ,
+            97,
+            106);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (112,'Batya','Wilson','Female',
+            92 ,
+            98,
+            107);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (113,'Zippora','Taylor','Female',
+            91 ,
+            97,
+            109);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (114,'Tamar','Phillips','Female',
+            92 ,
+            98,
+            110);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (115,'Sivan','Lee','Female',
+            92 ,
+            98,
+            116);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (116,'David','Young','Male',
+            92 ,
+            98,
+            115);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (117,'Isaac','Adams','Male',
+            91 ,
+            97,
+            122);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (118,'Jonah','Taylor','Male',
+            91 ,
+            97,
+            124);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (119,'Elijah','Jones','Male',
+            92 ,
+            98,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (120,'Caleb','Jackson','Male',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (121,'Amos','Adams','Male',
+            91 ,
+            97,
+            132);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (122,'Meira','Carter','Female',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (123,'Tuvia','Nelson','Male',
+            92 ,
+            98,
+            136);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (124,'Shoshana','Miller','Female',
+            92 ,
+            98,
+            118);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (125,'Gad','Davis','Male',
+            92 ,
+            98,
+            139);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (126,'Nadav','Nelson','Male',
+            91 ,
+            97,
+            144);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (127,'Simeon','Jackson','Male',
+            92 ,
+            98,
+            145);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (128,'Reuven','Perez','Male',
+            92 ,
+            98,
+            149);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (129,'Shimon','Roberts','Male',
+            91 ,
+            97,
+            152);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (130,'Ahuva','Scott','Female',
+            91 ,
+            97,
+            119);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (131,'Rachel','Garcia','Female',
+            91 ,
+            97,
+            120);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (132,'Hadas','Williams','Female',
+            91 ,
+            97,
+            121);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (133,'Ezekiel','Stewart','Male',
+            92 ,
+            98,
+            153);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (134,'Ariel','Taylor','Male',
+            91 ,
+            97,
+            156);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (135,'Nadav','Lewis','Male',
+            92 ,
+            98,
+            157);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (136,'Hila','Smith','Female',
+            91 ,
+            97,
+            123);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (137,'Isaac','Turner','Male',
+            92 ,
+            98,
+            158);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (138,'Baruch','Williams','Male',
+            92 ,
+            98,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (139,'Tali','Nelson','Female',
+            92 ,
+            98,
+            125);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (140,'Jeremiah','Rodriguez','Male',
+            91 ,
+            97,
+            160);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (141,'Naphtali','White','Male',
+            91 ,
+            97,
+            161);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (142,'Elijah','Wilson','Male',
+            91 ,
+            97,
+            162);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (143,'Tuvia','Miller','Male',
+            92 ,
+            98,
+            163);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (144,'Chagit','Nelson','Female',
+            92 ,
+            98,
+            126);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (145,'Meira','Collins','Female',
+            91 ,
+            97,
+            127);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (146,'Reuben','Hernandez','Male',
+            91 ,
+            97,
+            166);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (147,'Isaiah','Johnson','Male',
+            91 ,
+            97,
+            169);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (148,'Nadav','Perez','Male',
+            92 ,
+            98,
+            170);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (149,'Shoshana','Collins','Female',
+            91 ,
+            97,
+            128);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (150,'Simeon','Hernandez','Male',
+            91 ,
+            97,
+            171);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (151,'Nathan','Williams','Male',
+            92 ,
+            98,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (152,'Malkah','Gonzalez','Female',
+            92 ,
+            98,
+            129);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (153,'Liya','Martin','Female',
+            91 ,
+            97,
+            133);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (154,'Asher','Johnson','Male',
+            91 ,
+            97,
+            174);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (155,'Saul','Perez','Male',
+            92 ,
+            98,
+            176);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (156,'Miriam','Stewart','Female',
+            91 ,
+            97,
+            134);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (157,'Liya','Carter','Female',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (158,'Noa','Adams','Female',
+            92 ,
+            98,
+            137);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (159,'Rebecca','Davis','Female',
+            91 ,
+            97,
+            138);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (160,'Shulamit','Rivera','Female',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (161,'Leah','Miller','Female',
+            92 ,
+            98,
+            141);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (162,'Liya','Parker','Female',
+            92 ,
+            98,
+            142);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (163,'Rivka','Campbell','Female',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (164,'Nathan','Hall','Male',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (165,'Gad','Williams','Male',
+            92 ,
+            98,
+            180);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (166,'Sarah','Baker','Female',
+            91 ,
+            97,
+            146);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (167,'Caleb','Ramirez','Male',
+            91 ,
+            97,
+            181);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (168,'Tuvia','Perez','Male',
+            91 ,
+            97,
+            183);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (169,'Shoshana','Davis','Female',
+            91 ,
+            97,
+            147);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (170,'Ahuva','Martin','Female',
+            91 ,
+            97,
+            148);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (171,'Avigail','Sanchez','Female',
+            92 ,
+            98,
+            150);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (172,'Hila','Rodriguez','Female',
+            91 ,
+            97,
+            151);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (173,'Isaiah','Phillips','Male',
+            91 ,
+            97,
+            184);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (174,'Noa','Collins','Female',
+            92 ,
+            98,
+            154);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (175,'Oren','Hall','Male',
+            91 ,
+            97,
+            188);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (176,'Tehila','Nelson','Female',
+            91 ,
+            97,
+            155);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (177,'Naphtali','Jackson','Male',
+            91 ,
+            97,
+            191);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (178,'Jeremiah','Rivera','Male',
+            92 ,
+            98,
+            196);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (179,'Sivan','Lewis','Female',
+            91 ,
+            97,
+            164);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (180,'Noa','Wilson','Female',
+            92 ,
+            98,
+            165);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (181,'Liat','Collins','Female',
+            91 ,
+            97,
+            167);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (182,'Tuvia','Garcia','Male',
+            92 ,
+            98,
+            199);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (183,'Ahuva','Phillips','Female',
+            92 ,
+            98,
+            168);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (184,'Esther','Edwards','Female',
+            91 ,
+            97,
+            173);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (185,'Shimon','Martin','Male',
+            91 ,
+            97,
+            200);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (186,'Ezra','Martinez','Male',
+            92 ,
+            98,
+            202);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (187,'Joshua','Thomas','Male',
+            92 ,
+            98,
+            204);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (188,'Meira','Stewart','Female',
+            91 ,
+            97,
+            175);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (189,'Hosea','Clark','Male',
+            91 ,
+            97,
+            205);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (190,'Reuven','Turner','Male',
+            91 ,
+            97,
+            206);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (191,'Bat-Chen','Sanchez','Female',
+            92 ,
+            98,
+            177);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (192,'Benjamin','Carter','Male',
+            91 ,
+            97,
+            207);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (193,'Noam','Stewart','Male',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (194,'Yitzhak','Ramirez','Male',
+            92 ,
+            98,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (195,'Jacob','Turner','Male',
+            92 ,
+            98,
+            214);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (196,'Rachel','Nelson','Female',
+            92 ,
+            98,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (197,'Samuel','Young','Male',
+            91 ,
+            97,
+            216);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (198,'Hosea','Phillips','Male',
+            92 ,
+            98,
+            217);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (199,'Yaara','Lewis','Female',
+            91 ,
+            97,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (200,'Hila','Lewis','Female',
+            92 ,
+            98,
+            185);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (201,'Nadav','King','Male',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (202,'Batya','Edwards','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (203,'Ariel','Moore','Male',
+            185 ,
+            200,
+            220);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (204,'Ayelet','Thomas','Female',
+            182 ,
+            199,
+            187);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (205,'Michal','Jones','Female',
+            182 ,
+            199,
+            189);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (206,'Zippora','Moore','Female',
+            178 ,
+            196,
+            190);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (207,'Avigail','Adams','Female',
+            182 ,
+            199,
+            192);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (208,'Daniel','Martinez','Male',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (209,'Nathan','Turner','Male',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (210,'Reuven','Wilson','Male',
+            182 ,
+            199,
+            226);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (211,'Isaiah','Clark','Male',
+            185 ,
+            200,
+            228);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (212,'Gila','Young','Female',
+            185 ,
+            200,
+            193);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (213,'Rachel','Wilson','Female',
+            182 ,
+            199,
+            194);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (214,'Raizel','Stewart','Female',
+            182 ,
+            199,
+            195);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (215,'Noam','Hall','Male',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (216,'Shira','Smith','Female',
+            182 ,
+            199,
+            197);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (217,'Tova','Edwards','Female',
+            182 ,
+            199,
+            198);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (218,'Malka','Adams','Female',
+            185 ,
+            200,
+            201);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (219,'Abraham','Anderson','Male',
+            182 ,
+            199,
+            230);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (220,'Rivka','Scott','Female',
+            182 ,
+            199,
+            203);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (221,'Nathan','Perez','Male',
+            182 ,
+            199,
+            231);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (222,'Dvorah','Hernandez','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (223,'Tamar','Mitchell','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (224,'Saul','Rivera','Male',
+            182 ,
+            199,
+            232);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (225,'Eli','Carter','Male',
+            185 ,
+            200,
+            238);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (226,'Tamar','Young','Female',
+            182 ,
+            199,
+            210);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (227,'Aaron','Taylor','Male',
+            182 ,
+            199,
+            240);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (228,'Avigail','Wilson','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (229,'Avigail','Perez','Female',
+            178 ,
+            196,
+            215);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (230,'Hadas','Edwards','Female',
+            182 ,
+            199,
+            219);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (231,'Batya','Garcia','Female',
+            185 ,
+            200,
+            221);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (232,'Rebecca','Collins','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (233,'Elijah','Anderson','Male',
+            185 ,
+            200,
+            243);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (234,'Yitzhak','Carter','Male',
+            182 ,
+            199,
+            245);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (235,'Noam','Johnson','Male',
+            178 ,
+            196,
+            248);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (236,'Ezra','Johnson','Male',
+            185 ,
+            200,
+            250);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (237,'Reuben','Rodriguez','Male',
+            178 ,
+            196,
+            251);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (238,'Shoshana','Davis','Female',
+            182 ,
+            199,
+            225);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (239,'Hosea','Turner','Male',
+            182 ,
+            199,
+            252);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (240,'Chagit','White','Female',
+            185 ,
+            200,
+            227);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (241,'Lior','Campbell','Male',
+            185 ,
+            200,
+            253);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (242,'Yitzhak','Hernandez','Male',
+            182 ,
+            199,
+            254);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (243,'Hannah','Rivera','Female',
+            182 ,
+            199,
+            233);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (244,'Naphtali','Hall','Male',
+            182 ,
+            199,
+            256);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (245,'Tehila','Torres','Female',
+            182 ,
+            199,
+            234);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (246,'Isaac','Rivera','Male',
+            178 ,
+            196,
+            257);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (247,'Solomon','Turner','Male',
+            182 ,
+            199,
+            258);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (248,'Noa','Campbell','Female',
+            185 ,
+            200,
+            235);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (249,'Hanan','Williams','Male',
+            182 ,
+            199,
+            261);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (250,'Gila','Ramirez','Female',
+            182 ,
+            199,
+            236);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (251,'Miriam','Green','Female',
+            182 ,
+            199,
+            237);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (252,'Sarah','Clark','Female',
+            185 ,
+            200,
+            239);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (253,'Hannah','Ramirez','Female',
+            182 ,
+            199,
+            241);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (254,'Ayelet','Young','Female',
+            178 ,
+            196,
+            242);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (255,'Jeremiah','Lopez','Male',
+            182 ,
+            199,
+            262);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (256,'Meira','Adams','Female',
+            182 ,
+            199,
+            244);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (257,'Sivan','Ramirez','Female',
+            185 ,
+            200,
+            246);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (258,'Avigail','Thomas','Female',
+            185 ,
+            200,
+            247);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (259,'Simeon','Lewis','Male',
+            182 ,
+            199,
+            263);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (260,'Noam','Young','Male',
+            182 ,
+            199,
+            264);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (261,'Chana','Johnson','Female',
+            178 ,
+            196,
+            249);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (262,'Avigail','Lopez','Female',
+            185 ,
+            200,
+            255);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (263,'Yocheved','Thompson','Female',
+            185 ,
+            200,
+            259);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (264,'Chana','Moore','Female',
+            185 ,
+            200,
+            260);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (265,'Hila','Smith','Female',
+            178 ,
+            196,
+            266);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (266,'Eli','Thomas','Male',
+            182 ,
+            199,
+            265);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (267,'Bat-Chen','Nelson','Female',
+            185 ,
+            200,
+            268);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (268,'Yaakov','King','Male',
+            185 ,
+            200,
+            267);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (269,'Michal','Johnson','Female',
+            185 ,
+            200,
+            270);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (270,'Judah','Anderson','Male',
+            185 ,
+            200,
+            269);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (271,'Yaara','Thomas','Female',
+            182 ,
+            199,
+            278);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (272,'Shoshana','Rivera','Female',
+            182 ,
+            199,
+            279);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (273,'Shira','Nelson','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (274,'Rivka','Collins','Female',
+            178 ,
+            196,
+            284);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (275,'Liya','Turner','Female',
+            185 ,
+            200,
+            285);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (276,'Hadas','Martin','Female',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (277,'Malkah','Davis','Female',
+            185 ,
+            200,
+            290);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (278,'Zachariah','Davis','Male',
+            182 ,
+            199,
+            271);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (279,'Ezra','Wilson','Male',
+            182 ,
+            199,
+            272);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (280,'Hadas','Parker','Female',
+            182 ,
+            199,
+            291);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (281,'Hannah','Gonzalez','Female',
+            182 ,
+            199,
+            293);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (282,'Malkah','White','Female',
+            185 ,
+            200,
+            295);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (283,'Naphtali','Smith','Male',
+            178 ,
+            196,
+            273);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (284,'Simeon','Williams','Male',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (285,'Shlomo','Jackson','Male',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (286,'Ariel','Edwards','Male',
+            182 ,
+            199,
+            276);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (287,'Hannah','Smith','Female',
+            182 ,
+            199,
+            297);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (288,'Shira','King','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (289,'Chana','Lopez','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (290,'Gad','King','Male',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (291,'Isaac','Sanchez','Male',
+            185 ,
+            200,
+            280);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (292,'Miriam','Hall','Female',
+            185 ,
+            200,
+            303);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (293,'Benjamin','Martinez','Male',
+            185 ,
+            200,
+            281);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (294,'Esther','Thomas','Female',
+            182 ,
+            199,
+            304);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (295,'Shlomo','Edwards','Male',
+            178 ,
+            196,
+            282);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (296,'Chavi','Campbell','Female',
+            182 ,
+            199,
+            305);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (297,'Yitzhak','Baker','Male',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (298,'Michal','Lewis','Female',
+            185 ,
+            200,
+            306);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (299,'Tali','Ramirez','Female',
+            182 ,
+            199,
+            309);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (300,'Nava','Mitchell','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (301,'Oren','Collins','Male',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (302,'Noam','Wilson','Male',
+            185 ,
+            200,
+            289);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (303,'Gad','Phillips','Male',
+            178 ,
+            196,
+            292);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (304,'Moses','Thomas','Male',
+            182 ,
+            199,
+            294);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (305,'Shlomo','Jones','Male',
+            182 ,
+            199,
+            296);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (306,'David','Clark','Male',
+            185 ,
+            200,
+            298);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (307,'Yaara','Campbell','Female',
+            185 ,
+            200,
+            313);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (308,'Yaara','Williams','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (309,'Judah','Torres','Male',
+            185 ,
+            200,
+            299);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (310,'Yaara','Young','Female',
+            182 ,
+            199,
+            316);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (311,'Shimon','Anderson','Male',
+            185 ,
+            200,
+            300);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (312,'Liat','Roberts','Female',
+            182 ,
+            199,
+            321);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (313,'Jeremiah','Davis','Male',
+            185 ,
+            200,
+            307);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (314,'Uri','Martinez','Male',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (315,'Deborah','Jones','Female',
+            182 ,
+            199,
+            323);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (316,'Moses','Martin','Male',
+            185 ,
+            200,
+            310);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (317,'Michal','Davis','Female',
+            178 ,
+            196,
+            324);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (318,'Yaara','Martin','Female',
+            178 ,
+            196,
+            326);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (319,'Hadas','Green','Female',
+            182 ,
+            199,
+            329);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (320,'Michal','Garcia','Female',
+            182 ,
+            199,
+            331);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (321,'Jeremiah','Collins','Male',
+            185 ,
+            200,
+            312);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (322,'Chavi','Taylor','Female',
+            185 ,
+            200,
+            334);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (323,'Eli','Anderson','Male',
+            182 ,
+            199,
+            315);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (324,'Noam','Evans','Male',
+            178 ,
+            196,
+            317);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (325,'Nava','Williams','Female',
+            185 ,
+            200,
+            336);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (326,'Eliezer','Baker','Male',
+            185 ,
+            200,
+            318);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (327,'Hadas','Lopez','Female',
+            185 ,
+            200,
+            337);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (328,'Ayelet','Scott','Female',
+            185 ,
+            200,
+            339);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (329,'Eliezer','Thompson','Male',
+            185 ,
+            200,
+            319);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (330,'Chana','Lee','Female',
+            182 ,
+            199,
+            341);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (331,'Moses','Perez','Male',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (332,'Yaara','Scott','Female',
+            182 ,
+            199,
+            342);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (333,'Shoshana','Sanchez','Female',
+            178 ,
+            196,
+            344);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (334,'Hosea','Garcia','Male',
+            178 ,
+            196,
+            322);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (335,'Batya','Lee','Female',
+            182 ,
+            199,
+            347);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (336,'Yitzhak','Sanchez','Male',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (337,'Tuvia','Adams','Male',
+            178 ,
+            196,
+            327);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (338,'Malka','Brown','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (339,'Jesse','White','Male',
+            178 ,
+            196,
+            328);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (340,'Ayelet','Lewis','Female',
+            185 ,
+            200,
+            352);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (341,'Levi','Moore','Male',
+            185 ,
+            200,
+            330);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (342,'Judah','Lewis','Male',
+            182 ,
+            199,
+            332);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (343,'Ruth','Johnson','Female',
+            182 ,
+            199,
+            353);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (344,'Reuven','Hernandez','Male',
+            182 ,
+            199,
+            333);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (345,'Hila','Smith','Female',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (346,'Esther','Anderson','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (347,'Hosea','Davis','Male',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (348,'Abraham','Torres','Male',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (349,'Ahuva','Torres','Female',
+            185 ,
+            200,
+            366);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (350,'Malka','King','Female',
+            185 ,
+            200,
+            368);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (351,'Zippora','Young','Female',
+            182 ,
+            199,
+            369);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (352,'Nathan','Gonzalez','Male',
+            185 ,
+            200,
+            340);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (353,'Isaac','Moore','Male',
+            182 ,
+            199,
+            343);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (354,'Chana','Green','Female',
+            182 ,
+            199,
+            371);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (355,'Sarah','Jackson','Female',
+            178 ,
+            196,
+            377);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (356,'Tali','Rivera','Female',
+            182 ,
+            199,
+            379);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (357,'Deborah','Lewis','Female',
+            185 ,
+            200,
+            380);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (358,'Liya','Perez','Female',
+            178 ,
+            196,
+            386);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (359,'Sivan','Lee','Female',
+            178 ,
+            196,
+            387);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (360,'Yaakov','Thomas','Male',
+            185 ,
+            200,
+            345);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (361,'Malkah','Stewart','Female',
+            185 ,
+            200,
+            388);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (362,'Leah','Lee','Female',
+            182 ,
+            199,
+            389);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (363,'Rinat','Harris','Female',
+            178 ,
+            196,
+            391);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (364,'Shoshana','Carter','Female',
+            185 ,
+            200,
+            392);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (365,'Abraham','Williams','Male',
+            185 ,
+            200,
+            346);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (366,'Jonah','Rivera','Male',
+            178 ,
+            196,
+            349);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (367,'Hannah','Lewis','Female',
+            185 ,
+            200,
+            397);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (368,'Jesse','Young','Male',
+            182 ,
+            199,
+            350);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (369,'Matan','Martinez','Male',
+            185 ,
+            200,
+            351);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (370,'Bracha','Martinez','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (371,'Eliezer','Taylor','Male',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (372,'Meira','Turner','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (373,'Bracha','Garcia','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (374,'Noa','Adams','Female',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (375,'Avigail','Roberts','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (376,'Gila','Williams','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (377,'Reuben','Roberts','Male',
+            182 ,
+            199,
+            355);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (378,'Malkah','Collins','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (379,'Jeremiah','Miller','Male',
+            178 ,
+            196,
+            356);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (380,'Amos','Hernandez','Male',
+            182 ,
+            199,
+            357);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (381,'Rebecca','Williams','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (382,'Liat','Brown','Female',
+            182 ,
+            199,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (383,'Liya','White','Female',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (384,'Deborah','Thomas','Female',
+            178 ,
+            196,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (385,'Nava','Evans','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (386,'Moses','Lopez','Male',
+            178 ,
+            196,
+            358);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (387,'Oren','Harris','Male',
+            185 ,
+            200,
+            359);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (388,'Abraham','Rivera','Male',
+            178 ,
+            196,
+            361);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (389,'Asher','Young','Male',
+            388 ,
+            361,
+            362);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (390,'Sivan','Taylor','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (391,'Hosea','Jackson','Male',
+            185 ,
+            200,
+            363);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (392,'Isaac','Lewis','Male',
+            388 ,
+            361,
+            364);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (393,'Tali','Martin','Female',
+            388 ,
+            361,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (394,'Yaara','Taylor','Female',
+            391 ,
+            363,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (395,'Tova','Gonzalez','Female',
+            388 ,
+            361,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (396,'Shira','Miller','Female',
+            185 ,
+            200,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (397,'Nathan','Hall','Male',
+            185 ,
+            200,
+            367);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (398,'Nava','Jackson','Female',
+            397 ,
+            367,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (399,'Rebecca','Phillips','Female',
+            397 ,
+            367,
+            NULL);
+            
+            INSERT INTO person (person_id,personal_name,family_name,gender,father_id,mother_id,spouse_id)
+            VALUES (400,'Hadas','Smith','Female',
+            388 ,
+            361,
+            NULL);
+            
